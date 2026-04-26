@@ -1,0 +1,91 @@
+# ApplyOS
+
+**The AI Job Application System. Wake up to jobs found, tailored, and ready to send.**
+
+A Cowork plugin that runs daily at 7:00 AM. It searches LinkedIn, Welcome to the Jungle, and JobTeaser for jobs matching your criteria, scores each one against your soul document, and builds full application packs (CV + cover letter + company POV + cold DM + interview prep) ready to send. By the time you wake up, your top 3 jobs per direction are pack-ready in Notion and the editable .docx and .pdf files are waiting in your local folder.
+
+> Part I taught you how to apply to a job in 15 minutes.
+> Part II teaches the system to do it while you sleep.
+
+---
+
+## Install
+
+Download the plugin and drag it into Cowork.
+
+**[Download applyos-v0.2.plugin](https://github.com/samuelsaleh/applyos/raw/main/applyos-v0.2.plugin)**
+
+After install, run `/applyos:setup` in Cowork. The command walks you through the entire setup in 30 to 60 minutes:
+- Build your soul document (one-time AI interview)
+- Capture hunt criteria (cities, role keywords, salary, languages, dealbreakers)
+- Ingest your base CVs
+- Personalize the Daily Job Hunter skill
+- Connect the Notion template
+- Generate your master schedule prompt
+
+That's it. Tomorrow morning at 07:00 the system fires its first run.
+
+---
+
+## What's inside
+
+**7 skills**
+
+| Skill | Purpose |
+|---|---|
+| Company Research | Researches a company from any JD using web search |
+| CV Optimizer | Produces edit list to tailor your CV per role |
+| Cover Letter Writer | Writes a tailored cover letter under 400 words |
+| Job Application Workflow | Orchestrates the manual application flow |
+| Daily Job Hunter | Searches LinkedIn, WTTJ, JobTeaser, scores against soul doc |
+| Application Packager | For top 3 per direction, runs all Part I skills automatically |
+| Notion Sync | Writes every job to your Notion Jobs database |
+
+**2 slash commands**
+
+| Command | Purpose |
+|---|---|
+| `/applyos:setup` | One-shot onboarding (run once after install) |
+| `/applyos:jobhunt-run` | Fire the daily hunt on demand |
+
+---
+
+## Daily output
+
+Once configured, every weekday at 7:00 AM:
+
+- **Notion** — every found job becomes a row with files attached, full pack in the sub-page
+- **Local cv folder** — editable `.docx` + ready-to-send `.pdf` for top 3 per direction, organized by date and direction
+- **Inbox** — daily digest email at 7:05 with top 3 highlighted
+
+You wake up, scan Notion, fire 3 to 5 applications. 15 minutes total.
+
+---
+
+## Honest limits
+
+- Does not auto-apply. You still hit the button.
+- Does not scrape LinkedIn behind login walls (uses the public Google index).
+- Does not replace your network.
+- Does not invent experiences.
+
+This is decision support, not automation.
+
+---
+
+## Read the full guide
+
+- **Part II guide**: [Notion guide](https://www.notion.so/34eab7c0ad76811d9cc0c9a26eaa9271)
+- **Part I (foundation)**: [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7439992775485390848/)
+
+Comment `Part I` on the Part II LinkedIn post for the original guide via DM.
+
+---
+
+## Author
+
+Samuel Saleh — [LinkedIn](https://www.linkedin.com/in/samuel-saleh-86021919a/)
+
+## License
+
+MIT
